@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3ls-rq-3Vg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleApp_RandomGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Number Generator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYX-tT-cUb">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59U-xT-H7g">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUb-1l-bjZ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OAn-zH-9Am">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nsi-Ci-Skq">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAN-Jd-7U8">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUH-af-Vc3">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OR-dL-dcq">
+                                <state key="normal" title="Generate"/>
+                                <connections>
+                                    <action selector="generateRandomNum:" destination="BYZ-38-t0r" eventType="touchDown" id="8hO-Z1-uLw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OAn-zH-9Am" firstAttribute="top" secondItem="ZYX-tT-cUb" secondAttribute="bottom" constant="8" id="2pb-ga-kyz"/>
+                            <constraint firstItem="Nsi-Ci-Skq" firstAttribute="top" secondItem="OAn-zH-9Am" secondAttribute="bottom" constant="8" id="5Ic-I2-7EV"/>
+                            <constraint firstItem="ZYX-tT-cUb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5SZ-Rm-4TQ"/>
+                            <constraint firstItem="ZYX-tT-cUb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Kl-S6-ma5"/>
+                            <constraint firstItem="6OR-dL-dcq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="8lW-SV-frn"/>
+                            <constraint firstItem="RUb-1l-bjZ" firstAttribute="bottom" secondItem="Nsi-Ci-Skq" secondAttribute="bottom" id="8y1-1V-Wi9"/>
+                            <constraint firstItem="Nsi-Ci-Skq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AyM-91-kxr"/>
+                            <constraint firstItem="mAN-Jd-7U8" firstAttribute="baseline" secondItem="aUH-af-Vc3" secondAttribute="baseline" id="I1m-kv-Yxs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mAN-Jd-7U8" secondAttribute="bottom" constant="238" id="Idt-bF-RK5"/>
+                            <constraint firstItem="6OR-dL-dcq" firstAttribute="top" secondItem="Nsi-Ci-Skq" secondAttribute="bottom" constant="8" symbolic="YES" id="KDS-3q-kGp"/>
+                            <constraint firstItem="OAn-zH-9Am" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Og1-c5-NI9"/>
+                            <constraint firstItem="59U-xT-H7g" firstAttribute="baseline" secondItem="OAn-zH-9Am" secondAttribute="baseline" id="VFg-Vi-AgF"/>
+                            <constraint firstItem="OAn-zH-9Am" firstAttribute="leading" secondItem="Nsi-Ci-Skq" secondAttribute="leading" id="ZIt-z5-NE5"/>
+                            <constraint firstItem="6OR-dL-dcq" firstAttribute="centerX" secondItem="ZYX-tT-cUb" secondAttribute="centerX" id="eLa-Tn-jYR"/>
+                            <constraint firstItem="Nsi-Ci-Skq" firstAttribute="leading" secondItem="mAN-Jd-7U8" secondAttribute="leading" id="ew8-Nd-O1I"/>
+                            <constraint firstItem="6OR-dL-dcq" firstAttribute="centerX" secondItem="aUH-af-Vc3" secondAttribute="centerX" id="jkR-RN-RXN"/>
+                            <constraint firstItem="Nsi-Ci-Skq" firstAttribute="leading" secondItem="RUb-1l-bjZ" secondAttribute="trailing" constant="8" symbolic="YES" id="lab-UZ-lpf"/>
+                            <constraint firstItem="OAn-zH-9Am" firstAttribute="leading" secondItem="59U-xT-H7g" secondAttribute="trailing" constant="8" symbolic="YES" id="oyG-Kz-eoJ"/>
+                            <constraint firstItem="OAn-zH-9Am" firstAttribute="leading" secondItem="ZYX-tT-cUb" secondAttribute="leading" id="tVc-lo-AgF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="p9d-lJ-MZJ"/>
+                    <connections>
+                        <outlet property="lowerBoundField" destination="OAn-zH-9Am" id="1TY-Lz-ZaF"/>
+                        <outlet property="resultLabel" destination="aUH-af-Vc3" id="Hwj-Wn-nDz"/>
+                        <outlet property="upperBoundField" destination="Nsi-Ci-Skq" id="SWB-N3-Kgl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026.4000000000001" y="112.89355322338831"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lZZ-lZ-xre">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3ls-rq-3Vg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KwR-tH-JP1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="paU-R9-Y67"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lct-s9-7ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.200000000000003" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>
