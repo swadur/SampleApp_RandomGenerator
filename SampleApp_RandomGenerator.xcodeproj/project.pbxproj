@@ -12,7 +12,26 @@
 		FF0A63D41DD154DD00011BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0A63D21DD154DD00011BB5 /* Main.storyboard */; };
 		FF0A63D61DD154DE00011BB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF0A63D51DD154DE00011BB5 /* Assets.xcassets */; };
 		FF0A63D91DD154DE00011BB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF0A63D71DD154DE00011BB5 /* LaunchScreen.storyboard */; };
+		FF315F591DE2900A0096AC02 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF315F581DE2900A0096AC02 /* Alamofire.framework */; };
+		FF315F5B1DE290670096AC02 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF315F581DE2900A0096AC02 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF315F5F1DE294A70096AC02 /* MovieAPITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF315F5E1DE294A70096AC02 /* MovieAPITableViewController.swift */; };
+		FF3A9FAE1DDA8E6A0075B6FA /* ThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9FAD1DDA8E6A0075B6FA /* ThemeController.swift */; };
+		FF3A9FB01DE236DF0075B6FA /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A9FAF1DE236DF0075B6FA /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF315F5A1DE290440096AC02 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF315F5B1DE290670096AC02 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF0A63CB1DD154DD00011BB5 /* SampleApp_RandomGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp_RandomGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +41,10 @@
 		FF0A63D51DD154DE00011BB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF0A63D81DD154DE00011BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF0A63DA1DD154DE00011BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF315F581DE2900A0096AC02 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		FF315F5E1DE294A70096AC02 /* MovieAPITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPITableViewController.swift; sourceTree = "<group>"; };
+		FF3A9FAD1DDA8E6A0075B6FA /* ThemeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeController.swift; sourceTree = "<group>"; };
+		FF3A9FAF1DE236DF0075B6FA /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF315F591DE2900A0096AC02 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +62,7 @@
 		FF0A63C21DD154DC00011BB5 = {
 			isa = PBXGroup;
 			children = (
+				FF315F551DE28F960096AC02 /* Frameworks */,
 				FF0A63CD1DD154DD00011BB5 /* SampleApp_RandomGenerator */,
 				FF0A63CC1DD154DD00011BB5 /* Products */,
 			);
@@ -54,14 +79,25 @@
 		FF0A63CD1DD154DD00011BB5 /* SampleApp_RandomGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				FF315F5E1DE294A70096AC02 /* MovieAPITableViewController.swift */,
 				FF0A63CE1DD154DD00011BB5 /* AppDelegate.swift */,
 				FF0A63D01DD154DD00011BB5 /* ViewController.swift */,
 				FF0A63D21DD154DD00011BB5 /* Main.storyboard */,
+				FF3A9FAF1DE236DF0075B6FA /* ModalViewController.swift */,
+				FF3A9FAD1DDA8E6A0075B6FA /* ThemeController.swift */,
 				FF0A63D51DD154DE00011BB5 /* Assets.xcassets */,
 				FF0A63D71DD154DE00011BB5 /* LaunchScreen.storyboard */,
 				FF0A63DA1DD154DE00011BB5 /* Info.plist */,
 			);
 			path = SampleApp_RandomGenerator;
+			sourceTree = "<group>";
+		};
+		FF315F551DE28F960096AC02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF315F581DE2900A0096AC02 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +110,7 @@
 				FF0A63C71DD154DC00011BB5 /* Sources */,
 				FF0A63C81DD154DC00011BB5 /* Frameworks */,
 				FF0A63C91DD154DC00011BB5 /* Resources */,
+				FF315F5A1DE290440096AC02 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3A9FB01DE236DF0075B6FA /* ModalViewController.swift in Sources */,
 				FF0A63D11DD154DD00011BB5 /* ViewController.swift in Sources */,
 				FF0A63CF1DD154DD00011BB5 /* AppDelegate.swift in Sources */,
+				FF315F5F1DE294A70096AC02 /* MovieAPITableViewController.swift in Sources */,
+				FF3A9FAE1DDA8E6A0075B6FA /* ThemeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MFJMQF5R5V;
+				FRAMEWORK_SEARCH_PATHS = ../Carthage/Build/iOS;
 				INFOPLIST_FILE = SampleApp_RandomGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HasmayaVentures.SampleApp-RandomGenerator";
@@ -275,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MFJMQF5R5V;
+				FRAMEWORK_SEARCH_PATHS = ../Carthage/Build/iOS;
 				INFOPLIST_FILE = SampleApp_RandomGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HasmayaVentures.SampleApp-RandomGenerator";
@@ -302,6 +344,7 @@
 				FF0A63DF1DD154DE00011BB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

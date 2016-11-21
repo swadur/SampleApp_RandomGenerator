@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var lowerBoundField: UITextField!
     @IBOutlet var upperBoundField: UITextField!
@@ -30,7 +30,27 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func validateTextField(_ textField: UITextField, _ textFieldName: String) {
+        var message: String
+        
+        if (textField.text?.isEmpty)! {
+            message = "The " + textFieldName + "is blank. Please, enter a value"
+            
+            let alert = UIAlertController(title: "Error!",
+                                          message: message,
+                preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default,
+                                       handler: nil)
+            
+            alert.addAction(action)
+            present(alert, animated: true, completion: nil)
+            //textField.foc
+            return;
+        }
+    }
+    
     @IBAction func generateRandomNum(_ button: UIButton) {
+        validateTextField(lowerBoundField, "Start")
         lowerBound = Int(lowerBoundField.text!)!
         upperBound = Int(upperBoundField.text!)!
         let result = lowerBound + Int(arc4random_uniform(UInt32(upperBound)))
